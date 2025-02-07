@@ -22,7 +22,8 @@ All For One React
 https://www.figma.com/design/ZnIXW7lhkrCUHutajkpXOG/Projects-2?node-id=185-2&t=ihMHLxsVymy4eK7o-1
 
 ### Peer Review
-by:
+by:Chris Wells-Hott
+The design is really good Im a big fallout fan. Everything is working and the responsivness is very good. God work
 
 
 
