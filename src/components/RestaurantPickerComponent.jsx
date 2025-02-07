@@ -75,28 +75,28 @@ const RestaurantPickerComponent = () => {
 
   return (
     <>
-      <section className="flex flex-col items-center justify-center px-15 md:px-55 lg:py-0 lg:pt-20 lg:items-start lg:pl-50 2xl:pl-40 2xl:pr-90 bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
+      <section className="flex flex-col items-center justify-center px-[60px] md:px-[220px] lg:py-0 lg:pt-20 lg:items-start lg:pl-[200px] 2xl:pl-40 2xl:pr-[360px] bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
         <ul className="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
           <li id="pipboyResponse">PipBoy: {cpuResponse}</li>
         </ul>
         <div id="optionsContainer" className="flex flex-col self-start">
           <button
             id="option1"
-            className="inline border-1 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[300px] lg:w-[620px] xl:w-[800px] 2xl:w-[940px] p-2 bg-[rgb(0,255,44,0.3)] rounded-[30px] mt-7 text-start pl-5"
+            className="inline border-2 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[300px] lg:w-[620px] xl:w-[800px] 2xl:w-[940px] p-2 bg-[rgb(0,255,44,0.3)] rounded-[30px] mt-7 text-start pl-5"
             onClick={() => setButtonCounter(1)}
           >
             {button1Options[optionCounter]}
           </button>
           <button
             id="option2"
-            className="inline border-1 border-[#00FF2C] text-[2rem] text-[#00FF2C] 2xl:w-[940px] p-2 bg-[rgb(0,255,44,0.3)] rounded-[30px] mt-7 text-start pl-5"
+            className="inline border-2 border-[#00FF2C] text-[2rem] text-[#00FF2C] 2xl:w-[940px] p-2 bg-[rgb(0,255,44,0.3)] rounded-[30px] mt-7 text-start pl-5"
             onClick={() => setButtonCounter(2)}
           >
             {button2Options[optionCounter]}
           </button>
           <button
             id="option3"
-            className="inline border-1 border-[#00FF2C] text-[2rem] text-[#00FF2C] 2xl:w-[940px] p-2 bg-[rgb(0,255,44,0.3)] rounded-[30px] mt-7 text-start pl-5"
+            className="inline border-2 border-[#00FF2C] text-[2rem] text-[#00FF2C] 2xl:w-[940px] p-2 bg-[rgb(0,255,44,0.3)] rounded-[30px] mt-7 text-start pl-5"
             onClick={() => setButtonCounter(3)}
           >
             {button3Options[optionCounter]}

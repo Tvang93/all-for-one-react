@@ -56,7 +56,7 @@ const GreaterThanLessThanComponent = () => {
 
   return (
     <>
-      <section className="flex flex-col items-center justify-center px-15 py-20 md:px-55 lg:py-0 lg:pt-20 lg:items-start lg:pl-50 2xl:pl-40 2xl:pr-90 bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
+      <section className="flex flex-col items-center justify-center px-[60px] py-20 md:px-[220px] lg:py-0 lg:pt-20 lg:items-start lg:pl-[200px] 2xl:pl-40 2xl:pr-[360px] bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
         <ul className="text-[1.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
           <li>
             PipBoy: I can tell you if one number is greater than or less than
@@ -67,7 +67,7 @@ const GreaterThanLessThanComponent = () => {
           <div id="inputContainer" className="flex flex-col text-[#00FF2C]">
             <input
               id="inputField"
-              className="inline border-1 border-[#00FF2C] text-[1.5rem] text-[#00FF2C] w-[250px] xl:w-[400px] bg-transparent"
+              className="inline border-2 border-[#00FF2C] text-[1.5rem] text-[#00FF2C] w-[250px] xl:w-[400px] bg-transparent"
               type="number"
               placeholder="First Number"
               maxLength="20"
@@ -84,7 +84,7 @@ const GreaterThanLessThanComponent = () => {
           <div id="input2Container" className="flex flex-col text-[#00FF2C]">
             <input
               id="inputField2"
-              className="inline border-1 border-[#00FF2C] text-[1.5rem] text-[#00FF2C] w-[250px] xl:w-[400px] bg-transparent"
+              className="inline border-2 border-[#00FF2C] text-[1.5rem] text-[#00FF2C] w-[250px] xl:w-[400px] bg-transparent"
               type="number"
               placeholder="Second Number"
               maxLength="20"
