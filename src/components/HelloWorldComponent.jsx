@@ -1,33 +1,34 @@
 import { useState } from "react";
 import { GetHelloWorld } from "../services/services";
+import pipBoy from "../assets/pipboy-man.png";
 
 const HelloWorldComponent = () => {
-  const [response, setResponse] = useState('');
+  const [response, setResponse] = useState("");
   const [isInputActive, setIsInputActive] = useState(false);
 
   const getInputValue = async (e) => {
-    if(e.target.value.trim(" ") != ""){
-      if(e.key === 'Enter'){
-        setResponse(await GetHelloWorld(e.target.value))
-        e.target.value = '';
+    if (e.target.value.trim(" ") != "") {
+      if (e.key === "Enter") {
+        setResponse(await GetHelloWorld(e.target.value));
+        e.target.value = "";
       }
     }
-  }
+  };
 
   const handleFocus = () => {
-    setIsInputActive(true)
-  }
+    setIsInputActive(true);
+  };
 
   const handleBlur = () => {
-    setIsInputActive(false)
-  }
+    setIsInputActive(false);
+  };
 
   const activeInput = () => {
-    setResponse('');
-  }
+    setResponse("");
+  };
 
   return (
-    <section className="flex flex-col items-center justify-center px-15 py-40 sm:px-55 lg:py-0 lg:pt-20 lg:items-start lg:pl-50 2xl:pl-100 bg-[url(../assets/img/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
+    <section className="flex flex-col items-center justify-center px-15 py-40 sm:px-55 lg:py-0 lg:pt-20 lg:items-start lg:pl-50 2xl:pl-100 bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
       <ul className="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
         <li>PipBoy: What is your name?</li>
       </ul>
@@ -42,18 +43,26 @@ const HelloWorldComponent = () => {
           onFocus={handleFocus}
           onBlur={handleBlur}
         />
-        { isInputActive &&
+        {isInputActive && (
           <h3 id="inputDirections" className="lg:text-lg">
             Please Type In Your Name Then Press Enter.
           </h3>
-        }
+        )}
       </div>
-      { 
-        response !== "" &&
+      {response !== "" && (
         <div className="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
           <p>PipBoy: {response}</p>
         </div>
-      }
+      )}
+      {/* <footer id="pipboy1" className="hidden lg:block absolute left-[3%] top-[50%]">
+        <div className="scale-x-[-1]">
+          <img
+            className="w-[260px] h-[390px] object-fill "
+            src={pipBoy}
+            alt="pipboy giving thumbs up"
+          />
+        </div>
+      </footer> */}
     </section>
   );
 };

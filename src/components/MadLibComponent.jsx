@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { GetMadLib } from "../services/services";
+import pipBoy from "../assets/pipboy-man.png";
 
 const MadLibComponent = () => {
   const [entryArray, setEntryArray] = useState([]);
   const [cpuResponse, setCpuResponse] = useState("");
   const [counter, setCounter] = useState(0);
-  const [entryPrompts, setEntryPrompts] = useState("Type in an animal")
+  const [entryPrompts, setEntryPrompts] = useState("Type in an animal");
 
   const entryPromtsArray = [
     "Type in an animal",
@@ -30,8 +31,8 @@ const MadLibComponent = () => {
   };
 
   useEffect(() => {
-    setEntryPrompts(entryPromtsArray[counter])
-  }, [counter])
+    setEntryPrompts(entryPromtsArray[counter]);
+  }, [counter]);
 
   useEffect(() => {
     if (entryArray.length > 9) {
@@ -59,7 +60,7 @@ const MadLibComponent = () => {
 
   return (
     <>
-      <section className="flex flex-col items-center justify-center px-15 py-45 sm:px-55 lg:py-0 lg:pt-20 lg:items-start lg:pl-50 2xl:pl-100 bg-[url(../assets/img/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
+      <section className="flex flex-col items-center justify-center px-15 py-45 sm:px-55 lg:py-0 lg:pt-20 lg:items-start lg:pl-50 2xl:pl-100 bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
         {entryArray.length < 10 && (
           <>
             <ul className="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
@@ -85,6 +86,18 @@ const MadLibComponent = () => {
             <p>PipBoy: {cpuResponse}</p>
           </div>
         )}
+        {/* <footer
+          id="pipboy1"
+          className="hidden lg:block absolute left-[3%] top-[50%]"
+        >
+          <div className="scale-x-[-1]">
+            <img
+              className="w-[260px] h-[390px] object-fill "
+              src={pipBoy}
+              alt="pipboy giving thumbs up"
+            />
+          </div>
+        </footer> */}
       </section>
     </>
   );

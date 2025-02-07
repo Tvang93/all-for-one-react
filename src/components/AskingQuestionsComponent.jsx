@@ -1,41 +1,42 @@
 import { useEffect, useState } from "react";
 import { GetAskingQuestions } from "../services/services";
+import pipBoy from "../assets/pipboy-man.png";
 
 const AskingQuestionsComponent = () => {
-    const [userName, setUserName] = useState("");
-    const [userTime, setUserTime] = useState("");
-    const [cpuResponse, setCpuResponse] = useState('');
+  const [userName, setUserName] = useState("");
+  const [userTime, setUserTime] = useState("");
+  const [cpuResponse, setCpuResponse] = useState("");
 
-    const [isInput1Active, setIsInput1Active] = useState(false);
-    const [isInput2Active, setIsInput2Active] = useState(false);
+  const [isInput1Active, setIsInput1Active] = useState(false);
+  const [isInput2Active, setIsInput2Active] = useState(false);
 
-    let isNameSaved = userName.trim('') !== ""
-    
-    const getUserName = async(e) => {
-        if (e.target.value.trim(" ") != "") {
-            if(e.key === "Enter") {
-                setUserName(e.target.value);
-            }
-        }
+  let isNameSaved = userName.trim("") !== "";
+
+  const getUserName = async (e) => {
+    if (e.target.value.trim(" ") != "") {
+      if (e.key === "Enter") {
+        setUserName(e.target.value);
+      }
     }
+  };
 
-    const getUserTime = async(e) => {
-        if (e.target.value.trim(" ") != "") {
-            if(e.key === "Enter") {
-                setUserTime(e.target.value);
-            }
-        }
+  const getUserTime = async (e) => {
+    if (e.target.value.trim(" ") != "") {
+      if (e.key === "Enter") {
+        setUserTime(e.target.value);
+      }
     }
+  };
 
-    useEffect(() => {
-        if(userTime !== "" && userName.trim(" ") !== ""){
-            fetchAskingQuestions(userName, userTime)
-        }
-    }, [userName, userTime])
-
-    const fetchAskingQuestions = async(a,b) => {
-        setCpuResponse(await GetAskingQuestions(a,b))
+  useEffect(() => {
+    if (userTime !== "" && userName.trim(" ") !== "") {
+      fetchAskingQuestions(userName, userTime);
     }
+  }, [userName, userTime]);
+
+  const fetchAskingQuestions = async (a, b) => {
+    setCpuResponse(await GetAskingQuestions(a, b));
+  };
 
   const handleFocus1 = () => {
     setIsInput1Active(true);
@@ -54,7 +55,7 @@ const AskingQuestionsComponent = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center px-15 py-40 sm:px-55 lg:py-0 lg:pt-20 lg:items-start lg:pl-50 2xl:pl-100 bg-[url(../assets/img/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
+    <section className="flex flex-col items-center justify-center px-15 py-40 sm:px-55 lg:py-0 lg:pt-20 lg:items-start lg:pl-50 2xl:pl-100 bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
       <ul className="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
         <li>PipBoy: What is your name?</li>
       </ul>
@@ -68,14 +69,13 @@ const AskingQuestionsComponent = () => {
           onFocus={handleFocus1}
           onBlur={handleBlur1}
         />
-        {
-          isInput1Active && 
+        {isInput1Active && (
           <h3 id="inputDirections" className="lg:text-lg">
             Please Type In Your Name Then Press Enter.
           </h3>
-        }
+        )}
       </div>
-      {isNameSaved && 
+      {isNameSaved && (
         <div>
           <ul className="text-[4rem] text-[#00FF2C]">
             <li
@@ -96,21 +96,28 @@ const AskingQuestionsComponent = () => {
               onFocus={handleFocus2}
               onBlur={handleBlur2}
             />
-            {
-              isInput2Active &&
+            {isInput2Active && (
               <h3 id="input2Directions" className="lg:text-lg ">
-              Please Type In The Time You Awoke Then Press Enter.
-              </h3>  
-            }
+                Please Type In The Time You Awoke Then Press Enter.
+              </h3>
+            )}
           </div>
         </div>
-      }
-      {
-        cpuResponse !== '' &&
+      )}
+      {cpuResponse !== "" && (
         <div className="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
           <p>PipBoy: {cpuResponse}</p>
         </div>
-      }
+      )}
+      {/* <footer id="pipboy1" className="hidden lg:block absolute left-[3%] top-[50%]">
+        <div className="scale-x-[-1]">
+          <img
+            className="w-[260px] h-[390px] object-fill "
+            src={pipBoy}
+            alt="pipboy giving thumbs up"
+          />
+        </div>
+      </footer> */}
     </section>
   );
 };
