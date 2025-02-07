@@ -99,15 +99,6 @@ const Add2NumbersComponent = () => {
             <p>PipBoy: {cpuResponse}</p>
           </div>
         )}
-        {/* <footer id="pipboy1" className="hidden lg:block absolute left-[3%] top-[50%]">
-          <div className="scale-x-[-1]">
-            <img
-              className="w-[260px] h-[390px] object-fill "
-              src={pipBoy}
-              alt="pipboy giving thumbs up"
-            />
-          </div>
-        </footer> */}
       </section>
     </>
   );

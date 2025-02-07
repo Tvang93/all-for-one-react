@@ -104,15 +104,6 @@ const GreaterThanLessThanComponent = () => {
             <p>PipBoy: {cpuResponse}</p>
           </div>
         )}
-        {/* <footer id="pipboy2" className="hidden lg:block absolute left-[79%] top-[50%]">
-          <div>
-            <img
-              className="w-[260px] h-[390px] object-fill "
-              src={pipBoy}
-              alt="pipboy giving thumbs up"
-            />
-          </div>
-        </footer> */}
       </section>
     </>
   );
