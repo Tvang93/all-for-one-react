@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GetMagic8Ball } from "../services/services";
+import { GetMagic8Ball } from "../services/DataServices";
 import pipBoy from "../assets/pipboy-man.png";
 
 const Magic8BallComponent = () => {

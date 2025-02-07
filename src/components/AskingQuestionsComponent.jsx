@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GetAskingQuestions } from "../services/services";
+import { GetAskingQuestions } from "../services/DataServices";
 import pipBoy from "../assets/pipboy-man.png";
 
 const AskingQuestionsComponent = () => {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GetAdd2Numbers } from "../services/services";
+import { GetAdd2Numbers } from "../services/DataServices";
 import pipBoy from "../assets/pipboy-man.png";
 
 const Add2NumbersComponent = () => {

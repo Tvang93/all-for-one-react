@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GetOddOrEven } from "../services/services";
+import { GetOddOrEven } from "../services/DataServices";
 import pipBoy from "../assets/pipboy-man.png";
 
 const OddOrEvenComponent = () => {

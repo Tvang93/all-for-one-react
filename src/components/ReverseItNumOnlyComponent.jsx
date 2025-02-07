@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GetReverseItNO } from "../services/services";
+import { GetReverseItNO } from "../services/DataServices";
 import pipBoy from "../assets/pipboy-man.png";
 
 const ReverseItNumOnlyComponent = () => {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GetHelloWorld } from "../services/services";
+import { GetHelloWorld } from "../services/DataServices";
 import pipBoy from "../assets/pipboy-man.png";
 
 const HelloWorldComponent = () => {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GetReverseItAN } from "../services/services";
+import { GetReverseItAN } from "../services/DataServices";
 import pipBoy from "../assets/pipboy-man.png";
 
 const ReverseItAlphaNumComponent = () => {

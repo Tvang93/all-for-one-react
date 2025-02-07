@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GetRestaurantPicker } from "../services/services";
+import { GetRestaurantPicker } from "../services/DataServices";
 import pipBoy from "../assets/pipboy-man.png";
 
 const RestaurantPickerComponent = () => {

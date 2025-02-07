@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GetMadLib } from "../services/services";
+import { GetMadLib } from "../services/DataServices";
 import pipBoy from "../assets/pipboy-man.png";
 
 const MadLibComponent = () => {

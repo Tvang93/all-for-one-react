@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GetGreaterThanLessThan } from "../services/services";
+import { GetGreaterThanLessThan } from "../services/DataServices";
 import pipBoy from "../assets/pipboy-man.png";
 
 const GreaterThanLessThanComponent = () => {
