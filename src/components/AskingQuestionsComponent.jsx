@@ -28,7 +28,7 @@ const AskingQuestionsComponent = () => {
     }
 
     useEffect(() => {
-        if(userTime !== "" && userName.trim(" ") !== ''){
+        if(userTime !== "" && userName.trim(" ") !== ""){
             fetchAskingQuestions(userName, userTime)
         }
     }, [userName, userTime])
@@ -88,7 +88,7 @@ const AskingQuestionsComponent = () => {
           <div id="input2Container" className="flex-col text-[#00FF2C] ">
             <input
               id="inputField2"
-              className="inline border-1 border-[#00FF2C] text-[2rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] w-[300px] lg:w-[750px] xl:w-[940px]"
+              className="inline border-1 border-[#00FF2C] text-[2rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] w-[300px] lg:w-[750px] xl:w-[940px] bg-transparent"
               type="number"
               placeholder="Please type hour in here."
               maxLength="2"

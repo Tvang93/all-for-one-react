@@ -28,7 +28,7 @@ const RestaurantPickerComponent = () => {
       if (responseCounter > 0) {
         switch (buttonCounter) {
           case 1:
-            setResponseCounter(1)
+            setResponseCounter(1);
             setResponse();
             break;
           case 2:
