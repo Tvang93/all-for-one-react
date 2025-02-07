@@ -55,14 +55,14 @@ const AskingQuestionsComponent = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center px-[60px] py-40 sm:px-[13.75rem] lg:py-0 lg:pt-20 lg:items-start lg:pl-[200px] 2xl:pl-[400px] bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
+    <section className="flex flex-col items-center justify-center px-[60px] py-44 sm:px-[13.75rem] lg:py-0 lg:pt-20 lg:items-start lg:pl-[250px] xl:pl-[350px] 2xl:pl-[400px] bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
       <ul className="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
         <li>PipBoy: What is your name?</li>
       </ul>
       <div className="flex flex-col text-[#00FF2C] self-start">
         <input
           id="inputField"
-          className="inline border-2 border-[#00FF2C] bg-transparent text-[2rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] w-[300px] lg:w-[750px] xl:w-[940px]"
+          className="inline border-2 border-[#00FF2C] bg-transparent text-[2rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] w-[300px] lg:w-[700px] 2xl:w-[940px]"
           type="text"
           placeholder="Please type name in here."
           onKeyDown={getUserName}
@@ -88,7 +88,7 @@ const AskingQuestionsComponent = () => {
           <div id="input2Container" className="flex-col text-[#00FF2C] ">
             <input
               id="inputField2"
-              className="inline border-2 border-[#00FF2C] text-[2rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] w-[300px] lg:w-[750px] xl:w-[940px] bg-transparent"
+              className="inline border-2 border-[#00FF2C] text-[2rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] w-[300px] lg:w-[700px] 2xl:w-[940px] bg-transparent"
               type="number"
               placeholder="Please type hour in here."
               maxLength="2"

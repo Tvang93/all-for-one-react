@@ -54,15 +54,15 @@ const Add2NumbersComponent = () => {
 
   return (
     <>
-      <section className="flex flex-col items-center justify-center px-[60px] py-[100px] md:px-[220px] lg:py-0 lg:pt-20 lg:items-start lg:pl-[200px] 2xl:pl-[400px] bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
+      <section className="flex flex-col items-center justify-center px-[60px] py-[100px] md:px-[220px] lg:py-0 lg:pt-20 lg:items-start lg:pl-[250px] xl:pl-[350px] 2xl:pl-[400px] bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
         <ul className="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
           <li>PipBoy: I can add 2 number for you.</li>
         </ul>
-        <div className="flex flex-col xl:flex-row gap-10 xl:gap-20 mt-7 self-start">
+        <div className="flex flex-col lg:flex-row gap-10 xl:gap-20 mt-7 self-start">
           <div id="inputContainer" className="flex flex-col text-[#00FF2C]">
             <input
               id="inputField"
-              className="inline border-2 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[250px] xl:w-[400px] bg-transparent"
+              className="inline border-2 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[250px] 2xl:w-[400px] bg-transparent"
               type="number"
               placeholder="First Number"
               maxLength="20"
@@ -79,7 +79,7 @@ const Add2NumbersComponent = () => {
           <div id="input2Container" className="flex flex-col text-[#00FF2C]">
             <input
               id="inputField2"
-              className="inline border-2 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[250px] xl:w-[400px] bg-transparent"
+              className="inline border-2 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[250px] 2xl:w-[400px] bg-transparent"
               type="number"
               placeholder="Second Number"
               maxLength="20"

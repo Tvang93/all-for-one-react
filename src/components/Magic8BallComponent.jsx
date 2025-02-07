@@ -28,7 +28,7 @@ const Magic8BallComponent = () => {
 
   return (
     <>
-      <section className="flex flex-col items-center justify-center px-[60px] py-10 md:px-[220px] lg:py-0 lg:pt-20 lg:items-start lg:pl-[200px] 2xl:pl-40 2xl:pr-[360px] bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
+      <section className="flex flex-col items-center justify-center px-[60px] py-24 md:px-[220px] lg:py-0 lg:pt-20 lg:items-start lg:pl-[200px] 2xl:pl-40 2xl:pr-[360px] bg-[url(./assets/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
         <ul className="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
           <li>PipBoy: I can tell your fortune, please ask me a question.</li>
         </ul>
@@ -38,7 +38,7 @@ const Magic8BallComponent = () => {
         >
           <textarea
             id="inputField"
-            className="inline border-2 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[300px] h-[150px] lg:w-[750px] xl:w-[940px] bg-transparent"
+            className="inline border-2 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[300px] h-[150px] lg:w-[600px] xl:w-[750px] 2xl:w-[940px] bg-transparent"
             type="text"
             rows="2"
             placeholder="Please type question in here."

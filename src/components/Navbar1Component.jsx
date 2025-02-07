@@ -10,7 +10,7 @@ const Navbar1Component = () => {
     "/",
     "/HelloWorld",
     "/AskingQuestions",
-    "/Adding2Numbers",
+    "/Add2Numbers",
     "/OddOrEven",
     "/MadLib"
   ]
@@ -64,7 +64,7 @@ const Navbar1Component = () => {
         <button
           id="dropdownMenuIconButton"
           data-dropdown-toggle="dropdownDots"
-          className="inline-flex rounded-lg lg:hidden w-12"
+          className="inline-flex pt-[28px] pl-[20px] p-2 rounded-lg lg:hidden w-[70px]"
           type="button"
           onClick={More}
         >
@@ -72,7 +72,7 @@ const Navbar1Component = () => {
         </button>
       </div>
       <Link
-        className="lg:py-5 lg:pl-5 lg:border-b-2 border-b-[#00FF2C] flex-grow-0 shrink-0 w-12 lg:w-[70px]"
+        className="pt-[20px] pr-[20px] lg:pr-0 lg:py-5 lg:pl-5 lg:border-b-2 border-b-[#00FF2C] flex-grow-0 shrink-0 w-[70px]"
         to="/"
         onClick={HomePage}
       >
@@ -193,11 +193,11 @@ const Navbar1Component = () => {
       }
       </div>
       {isMore && (
-        <div id="dropdownDots" class="absolute z-10 bg-[rgb(0,0,0,0.6)] rounded-lg mt-[54px]">
+        <div id="dropdownDots" class="absolute z-10 bg-[rgb(0,0,0,0.6)] rounded-lg mt-[78px]">
           <ul class="py-2" aria-labelledby="dropdownMenuIconButton">
             <li class="font-medium text-[#00FF2C]">
               <a
-                to="/HelloWorld"
+                href="/HelloWorld"
                 class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]"
               >
                 Hello World
@@ -282,14 +282,14 @@ const Navbar1Component = () => {
         flippedImg ? (
             <footer id="pipboy1" className="hidden lg:block absolute left-[3%] top-[50%]">
                 <div className="scale-x-[-1]">
-                    <img className="w-[260px] h-[390px] object-fill " src={pipBoy}
+                    <img className="w-[200px] h-[300px] xl:w-[260px] xl:h-[390px] object-fill " src={pipBoy}
                         alt="pipboy giving thumbs up" />
                 </div>
             </footer>
         ) : (
             <footer id="pipboy2" className="hidden lg:block absolute left-[79%] top-[50%]">
                 <div>
-                    <img className="w-[260px] h-[390px] object-fill " src={pipBoy}
+                    <img className="w-[200px] h-[300px] xl:w-[260px] xl:h-[390px] object-fill " src={pipBoy}
                         alt="pipboy giving thumbs up" />
                 </div>
             </footer>

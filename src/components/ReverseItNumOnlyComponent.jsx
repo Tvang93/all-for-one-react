@@ -39,7 +39,7 @@ const ReverseItNumOnlyComponent = () => {
         >
           <input
             id="inputField"
-            className="inline border-2 border-[#00FF2C] text-[2rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] w-[300px] lg:w-[750px] xl:w-[940px] bg-transparent"
+            className="inline border-2 border-[#00FF2C] text-[2rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] w-[300px] lg:w-[600px] xl:w-[750px] 2xl:w-[940px] bg-transparent"
             type="number"
             placeholder="Please type number in here."
             onKeyDown={getInputValue}
