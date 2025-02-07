@@ -8,10 +8,8 @@ const HelloWorldComponent = () => {
   const getInputValue = async (e) => {
     if(e.target.value.trim(" ") != ""){
       if(e.key === 'Enter'){
-        console.log(await GetHelloWorld(e.target.value))
         setResponse(await GetHelloWorld(e.target.value))
         e.target.value = '';
-        setIsInputActive(false);
       }
     }
   }
@@ -24,12 +22,9 @@ const HelloWorldComponent = () => {
     setIsInputActive(false)
   }
 
-
   const activeInput = () => {
     setResponse('');
-    setIsInputActive(true);
   }
-
 
   return (
     <section className="flex flex-col items-center justify-center px-15 py-40 sm:px-55 lg:py-0 lg:pt-20 lg:items-start lg:pl-50 2xl:pl-100 bg-[url(../assets/img/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
@@ -54,7 +49,7 @@ const HelloWorldComponent = () => {
         }
       </div>
       { 
-        response.length > 0 &&
+        response !== "" &&
         <div className="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
           <p>PipBoy: {response}</p>
         </div>

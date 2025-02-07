@@ -10,6 +10,7 @@ const AskingQuestionsComponent = () => {
     const [isInput2Active, setIsInput2Active] = useState(false);
 
     let isNameSaved = userName.trim('') !== ""
+    
     const getUserName = async(e) => {
         if (e.target.value.trim(" ") != "") {
             if(e.key === "Enter") {
@@ -35,27 +36,6 @@ const AskingQuestionsComponent = () => {
     const fetchAskingQuestions = async(a,b) => {
         setCpuResponse(await GetAskingQuestions(a,b))
     }
-
-//   const getInput1Value = async (e) => {
-//     if (e.target.value.trim(" ") != "") {
-//       if (e.key === "Enter") {
-//         await setResponse(e.target.value);
-
-//         console.log(response)
-        
-//       }
-//     }
-//   };
-
-//   const getInput2Value = async (e) => {
-//     if (e.target.value.trim(" ") != "") {
-//       if (e.key === "Enter") {
-//         console.log(response)
-//         console.log(response2)
-//         setPipboy(await GetAskingQuestions(response, await setResponse2(e.target.value)))
-//       }
-//     }
-//   };
 
   const handleFocus1 = () => {
     setIsInput1Active(true);
